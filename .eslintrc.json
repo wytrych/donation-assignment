@@ -1,0 +1,24 @@
+{
+    "extends": "incuna",
+    "env": {
+        "browser": true,
+        "es6": true
+    },
+    "plugins": [
+        "react"
+    ],
+    "parserOptions": {
+        "sourceType": "module",
+        "ecmaFeatures": {
+            "jsx": true
+        }
+    },
+    "rules": {
+        "func-style": ["error", "declaration"],
+        "semi": ["error", "never"],
+        "curly": ["error", "multi"],
+        "no-use-before-define": ["error", {"functions": false}],
+        "react/jsx-uses-react": "error",
+        "react/jsx-uses-vars": "error"
+    }
+}
